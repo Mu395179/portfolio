@@ -1,55 +1,42 @@
-/* GOOGLE FOMT */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-/* VARIABLES CSS */
+/*===== VARIABLES CSS =====*/
 :root {
     --header-height: 3rem;
     --font-semi: 600;
-}
-
-/* Colores */
-
-:root {
-    --first-color: #4070F4;
-    --second-color: #0E2431;
-}
-
-:root {
+    /*===== Colores =====*/
+    /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+    /* HSL color mode */
+    --hue-color: 224;
+    --first-color: hsl(var(--hue-color), 89%, 60%);
+    --second-color: hsl(var(--hue-color), 56%, 12%);
+    /*===== Fuente y tipografia =====*/
     --body-font: "Poppins", sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
-    --normal-font-size: 0.938rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .75rem;
+    /*===== Margenes =====*/
+    --mb-2: 1rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+    /*===== z index =====*/
+    --z-back: -10;
+    --z-fixed: 100;
 }
 
-@media screen and(min-width:768px) {
+@media screen and (min-width: 968px) {
     :root {
         --big-font-size: 3.5rem;
         --h2-font-size: 2rem;
         --normal-font-size: 1rem;
+        --smaller-font-size: .875rem;
     }
 }
 
-/* Margenes */
-:root {
-    --mb-1: 0.5rem;
-    --mb-2: 1rem;
-    --mb-3: 1.5rem;
-    --mb-4: 2rem;
-    --mb-5: 2.5rem;
-    --mb-6: 3rem;
-}
-
-
-/* z index */
-:root {
-    --z-back: -10;
-    --z-normal: 1;
-    --z-tooptip: 10;
-    --z-fixed: 100;
-
-}
-
-/* BASE */
+/*===== BASE =====*/
 *,
 ::before,
 ::after {
@@ -89,8 +76,7 @@ img {
     display: block;
 }
 
-/* class css */
-
+/*===== CLASS CSS ===== */
 .section-title {
     position: relative;
     font-size: var(--h2-font-size);
@@ -115,15 +101,12 @@ img {
 .section {
     padding-top: 3rem;
     padding-bottom: 2rem;
-
 }
 
-/* layout */
+/*===== LAYOUT =====*/
 .bd-grid {
     max-width: 1024px;
     display: grid;
-    grid-template-columns: 100%;
-    width: salc(100% - 2rem);
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
 }
@@ -135,10 +118,10 @@ img {
     left: 0;
     z-index: var(--z-fixed);
     background-color: #fff;
-    box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
-/* nav */
+/*===== NAV =====*/
 .nav {
     height: var(--header-height);
     display: flex;
@@ -147,7 +130,7 @@ img {
     font-weight: var(--font-semi);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .nav__menu {
         position: fixed;
         top: var(--header-height);
@@ -156,7 +139,7 @@ img {
         height: 100%;
         padding: 2rem;
         background-color: var(--second-color);
-        transition: .5s;
+        transition: 0.5s;
     }
 }
 
@@ -167,7 +150,6 @@ img {
 .nav__link {
     position: relative;
     color: #fff;
-
 }
 
 .nav__link:hover {
@@ -189,15 +171,13 @@ img {
 }
 
 .nav__toggle {
-    columns: var(--second-color);
+    color: var(--second-color);
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-/* Acrive menu */
-
-
-.active::after {
+/*Active menu*/
+.active-link::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -207,8 +187,7 @@ img {
     background-color: var(--first-color);
 }
 
-/* Show menu */
-
+/*=== Show menu ===*/
 .show {
     right: 0;
 }
@@ -253,7 +232,8 @@ img {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 260px;
+    width: 197px;
+    left: 46%;
 }
 
 .home__blob {
@@ -264,21 +244,22 @@ img {
     width: 360px;
 }
 
-/* button */
+/*BUTTONS*/
 .button {
     display: inline-block;
     background-color: var(--first-color);
     color: #fff;
-    padding: .75rem 2.5rem;
+    padding: 0.75rem 2.5rem;
     font-weight: var(--font-semi);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
 }
 
 .button:hover {
-    box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
-/* ABOUT */
+/* ===== ABOUT =====*/
 .about__container {
     row-gap: 2rem;
     text-align: center;
@@ -286,7 +267,6 @@ img {
 
 .about__subtitle {
     margin-bottom: var(--mb-2);
-
 }
 
 .about__img {
@@ -294,8 +274,8 @@ img {
 }
 
 .about__img img {
-    width: 260px;
-    border-radius: .5rem;
+    width: 200px;
+    border-radius: 0.5rem;
 }
 
 /* ===== SKILLS =====*/
@@ -369,7 +349,11 @@ img {
     border-radius: .5rem;
 }
 
-/* WORK */
+.skills__img {
+    border-radius: 0.5rem;
+}
+
+/* ===== WORK =====*/
 .work__container {
     row-gap: 2rem;
 }
@@ -388,14 +372,13 @@ img {
     transform: scale(1.1);
 }
 
-/* contact */
-
+/* ===== CONTACT =====*/
 .contact__input {
     width: 100%;
     font-size: var(--normal-font-size);
     font-weight: var(--font-semi);
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     border: 1.5px solid var(--second-color);
     outline: none;
     margin-bottom: var(--mb-4);
@@ -410,7 +393,7 @@ img {
     margin-left: auto;
 }
 
-/* FOOTER */
+/* ===== FOOTER =====*/
 .footer {
     background-color: var(--second-color);
     color: #fff;
@@ -431,10 +414,12 @@ img {
 .footer__icon {
     font-size: 1.5rem;
     color: #fff;
-    margin: 0;
+    margin: 0 var(--mb-2);
 }
 
-/* MEDIA QUERIES */
+.footer__copy {
+    font-size: var(--smaller-font-size);
+}
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
@@ -466,7 +451,7 @@ img {
 
     .home__img {
         width: 300px;
-        bottom: 25%;
+        bottom: -11%;
     }
 
     .about__container {
@@ -543,8 +528,8 @@ img {
     }
 
     .home__img {
-        width: 400px;
-        bottom: 10%;
+        width: 323px;
+        /* bottom: 1%; */
     }
 
     .about__container {
@@ -579,6 +564,6 @@ img {
     }
 
     .home__img {
-        width: 450px;
+        width: 440px;
     }
 }

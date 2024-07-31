@@ -1,0 +1,33 @@
+.skills__bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: orangered;
+    height: 0.25rem;
+    border-radius: 0.5rem;
+    z-index: var(--z-back);
+}
+
+.skills__html {
+    width: 95%;
+}
+
+.skills__css {
+    width: 85%;
+}
+
+.skills__php {
+    width: 75%;
+}
+
+.skills__jq {
+    width: 65%;
+}
+
+.skills__js {
+    width: 55%;
+}
+
+.skills__img {
+    border-radius: .5rem;
+}
