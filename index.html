@@ -20,25 +20,257 @@
 <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nab__logo">David Wu</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
 
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            Home</i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skill" class="nav__link">
+                            Skill
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            Portfoloio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            Contect
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__bts">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
+            <div class="home__container container gird">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://github.com/Mu395179" target="_blank" class="home__social-icon">
 
+                            <i class="uil uil-github"></i>
+                        </a>
+                    </div>
+                    <div class="home__img">
+                        <img class="home__blob-img" src="./images/baseball.png" alt="">
+                    </div>
+                </div>
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Hi , I'am David
+                    </h1>
+                    <h3 class="home__subtitle"> Web Desginer</h3>
+                    <p class="home__description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum ab molestiae vel veritatis
+                        voluptates, numquam accusamus facere inventore doloremque fugiat, sapiente rem, doloribus sequi
+                        magnam voluptatem eos dolorem reprehenderit ex!
+                    </p>
+
+                    <!-- <a href="#contact" class="button button--flex">
+                        Contect Me
+                    </a> -->
+                </div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
         </section>
 
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
 
+            <div class="about__container container grid">
+
+                <img src="./images/logo2.png" alt="" class="about__img">
+
+
+                <div class="about__data">
+                    <p class="about__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repudiandae quam dolor quisquam,
+                        nostrum aspernatur veritatis et ratione enim laudantium?
+                    </p>
+
+                </div>
+
+            </div>
         </section>
 
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
 
+            <div class="skills__container container grid">
+                <!--==================== SKILL 1 ====================-->
+                <div>
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-server-network-alt skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">後端開發工具</h1>
+                                <!-- <span class="skills__subtitle"></span> -->
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__php"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Maria DB</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__db"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Laravel</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__lara"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--==================== SKILL 2 ====================-->
+                <div>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">前端開發工具</h1>
+                                <!-- <span class="skills__subtitle"></span> -->
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JQuery</h3>
+                                    <span class="skills__number">65%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__jq"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--==================== SKILL 3 ====================-->
+                <div>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-image-edit skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">美編工具</h1>
+                                <!-- <span class="skills__subtitle"></span> -->
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Photoshop</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__ps"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Adobe Illustrator</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__ill"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
+
 
         <!--==================== QUALIFICATION ====================-->
         <section class="qualification section">
