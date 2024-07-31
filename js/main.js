@@ -1,26 +1,39 @@
-// MENU SHOW
+/*==================== MENU SHOW Y HIDDEN ====================*/
 
-const showMenu = (toggleId, navId) => {
-    const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
 
-    if (toggle && nav) {
-        toggle.addEventListener('click', () => {
-            nav.classList.toggle('show')
-        })
-    }
-}
-showMenu('nav-toggle', 'nav-menu')
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
 
-// ACTIVE AND REMOVE MENU
-const navLink = document.querySelectorAll('.nav__link')
 
-function linkAction() {
-    // Active link
-    navLink.forEach(n => n.classList.remove('active'))
-    this.classList.add('active')
-    // Remove menu mobile
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+
+
+/*==================== REMOVE MENU MOBILE ====================*/
+
+
+/*==================== ACCORDION SKILLS ====================*/
+
+
+/*==================== QUALIFICATION TABS ====================*/
+
+
+/*==================== SERVICES MODAL ====================*/
+
+
+/*==================== PORTFOLIO SWIPER  ====================*/
+
+
+/*==================== TESTIMONIAL ====================*/
+
+
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+
+
+/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+
+
+/*==================== SHOW SCROLL UP ====================*/ 
+
+
+/*==================== DARK LIGHT THEME ====================*/ 
