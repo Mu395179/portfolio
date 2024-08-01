@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./css/styles.css">
@@ -176,11 +176,11 @@
 
                         </div>
                     </div>
-                </div>
 
 
-                <!--==================== SKILL 2 ====================-->
-                <div>
+
+                    <!--==================== SKILL 2 ====================-->
+
                     <div class="skills__content skills__close">
                         <div class="skills__header">
                             <i class="uil uil-brackets-curly skills__icon"></i>
@@ -273,33 +273,125 @@
 
 
         <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
+        <!-- <section class="qualification section">
 
-        </section>
+        </section> -->
 
         <!--==================== SERVICES ====================-->
-        <section class="services section" id="services">
+        <!-- <section class="services section" id="services">
 
-        </section>
+        </section> -->
 
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent work</span>
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="https://picsum.photos/300/200/?random=15" alt="" class="portfolio__img">
 
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Mordern Website</h3>
+                            <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestias quam exercitationem earum deleniti numquam voluptatibus.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="https://picsum.photos/300/200/?random=12" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Mordern Website</h3>
+                            <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestias quam exercitationem earum deleniti numquam voluptatibus.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO 3 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="https://picsum.photos/300/200/?random=11" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Mordern Website</h3>
+                            <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestias quam exercitationem earum deleniti numquam voluptatibus.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+                </div>
+
+                <!-- add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
 
         <!--==================== PROJECT IN MIND ====================-->
-        <section class="project section">
+        <!-- <section class="project section">
 
-        </section>
+        </section> -->
 
         <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section">
+        <!-- <section class="testimonial section">
 
-        </section>
+        </section> -->
 
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
 
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-mobile-vibrate contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Phone Number</h3>
+                            <span class="contact__subtitle">0926-572-693</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">G-mail</h3>
+                            <span class="contact__subtitle">d128579744@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-location-point contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">14F., No.19, Aly. 25, Ln. 85, Sinchun St., Tamsui Dist., New
+                                Taipei City </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
     </main>
 
@@ -312,7 +404,7 @@
 
 
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <script src="./js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="./js/main.js"></script>
