@@ -170,7 +170,8 @@ img {
 .nav__logo,
 .nav__toggle {
   columns: var(--title-color);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semi-bold);
+
 }
 
 .nav__logo:hover {

@@ -13,6 +13,7 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/scroll.css">
 
     <title>Responsive Portfolio Website</title>
 </head>
@@ -21,7 +22,7 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nab__logo">David Wu</a>
+            <a href="#" class="nav__logo">David Wu</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
 
@@ -85,7 +86,7 @@
                         </a>
                     </div>
                     <div class="home__img">
-                        <img class="home__blob-img" src="./images/01.jpg" alt="">
+                        <img class="home__blob-img" src="./images/baseball.png" alt="">
                     </div>
                     <div class="home__data">
                         <h1 class="home__title">
@@ -350,6 +351,115 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
+
+                <!--==================== PORTFOLIO ====================-->
+                <section class="portfolio section" id="portfolio">
+                    <h2 class="section__title">Portfolio</h2>
+                    <span class="section__subtitle">Most recent work</span>
+
+                    <div class="scroll imgbx" style="--t:20s">
+                        <div class="normal">
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github" target="_blank"><img
+                                    class="imgball" src="png_File\Antelope.png" alt="Bird"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="png_File\Bat.png" alt="Chicken"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Bear.png" alt="Penguin"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Bird.png" alt="Rabbit"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Cat.png" alt="Rat"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Chameleon.png" alt="Squirrel"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Chicken.png" alt="Squirrel"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Dog.png" alt="Squirrel"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Dolphin.png" alt="Squirrel"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Fox.png" alt="Squirrel"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Hippo.png" alt="Squirrel"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Kangaroo.png" alt="Bird"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Penguin.png" alt="Chicken"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Rabbit.png" alt="Penguin"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Rat.png" alt="Rabbit"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Rhino.png" alt="Rat"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Sea_Turtle.png" alt="Squirrel"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Shark.png" alt="Squirrel"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Squirrel.png" alt="Squirrel"></a>
+                            <a href="https://github.com/Mu395179/illustrator_portfolio" title="Go to Github"><img class="imgball"
+                                    src="./png_File/Whale.png" alt="Squirrel"></a>
+                
+                        </div>
+
+                    <div class="portfolio__container container swiper-container">
+                        <div class="swiper-wrapper">
+                            <!--==================== PORTFOLIO 1 ====================-->
+                            <div class="portfolio__content grid swiper-slide">
+                                <img src="https://picsum.photos/300/200/?random=15" alt="" class="portfolio__img">
+        
+                                <div class="portfolio__data">
+                                    <h3 class="portfolio__title">Mordern Website</h3>
+                                    <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Molestias quam exercitationem earum deleniti numquam voluptatibus.</p>
+                                    <a href="#" class="button button--flex button--small portfolio__button">
+                                        demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--==================== PORTFOLIO 2 ====================-->
+                            <div class="portfolio__content grid swiper-slide">
+                                <img src="https://picsum.photos/300/200/?random=12" alt="" class="portfolio__img">
+        
+                                <div class="portfolio__data">
+                                    <h3 class="portfolio__title">Mordern Website</h3>
+                                    <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Molestias quam exercitationem earum deleniti numquam voluptatibus.</p>
+                                    <a href="#" class="button button--flex button--small portfolio__button">
+                                        demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+        
+                            <!--==================== PORTFOLIO 3 ====================-->
+                            <div class="portfolio__content grid swiper-slide">
+                                <img src="https://picsum.photos/300/200/?random=11" alt="" class="portfolio__img">
+        
+                                <div class="portfolio__data">
+                                    <h3 class="portfolio__title">Mordern Website</h3>
+                                    <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Molestias quam exercitationem earum deleniti numquam voluptatibus.</p>
+                                    <a href="#" class="button button--flex button--small portfolio__button">
+                                        demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- add Arrows -->
+                        <div class="swiper-button-next">
+                            <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+                        </div>
+        
+                        <!-- add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
 
         <!--==================== PROJECT IN MIND ====================-->
         <!-- <section class="project section">
