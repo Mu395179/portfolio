@@ -366,6 +366,7 @@ img {
 .about__description {
   text-align: start;
   margin-bottom: var(--mb-2-5);
+  color: #fff;
 }
 
 
