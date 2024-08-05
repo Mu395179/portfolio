@@ -1,0 +1,8 @@
+@media screen and (min-width:1024px) {
+
+    .home__social {
+        transform: translateX(-6rem);
+    }
+
+
+}
